@@ -1,0 +1,19 @@
+0) TEST DATA
+Italiano -  "Professionisti SEO", "Content marketer", "Enterprise", "Agenzie", "SaaS", "E-commerce"
+English -  "Pro SEOs", "Content marketers", "Enterprise", "Agencies", "SaaS", "Ecommerce"
+1) Заголовок
+"Для локали {0} отображаются кнопки {1}"
+
+2) Критичность
+CRITICAL
+
+3) Предусловия
+Открыт браузер с главной страницей https://ahrefs.com
+
+4) Шаги:
+- найти внизу сайта выбор языка
+- из выпадающего списка выбрать локаль testdata[0]
+- в разделе с заголовком "You’re gonna love Ahrefs" проверить отображение кнопок testdata[1]
+
+5) Ожидаемый результат
+- кнопки testdata[1] корректно отображаются, согласно локали testdata[0]
